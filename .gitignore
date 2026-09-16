@@ -1,0 +1,6 @@
+/target
+*.AppImage
+/AppDir
+
+# editor backup files (foo.png~, foo.rs~)
+*~

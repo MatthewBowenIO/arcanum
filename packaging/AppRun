@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# AppImage entry point. The runtime libraries the binary needs
+# (X11/Wayland/GL client libs) are bundled next to it by linuxdeploy.
+HERE="$(dirname "$(readlink -f "$0")")"
+export LD_LIBRARY_PATH="${HERE}/usr/lib:${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}"
+exec "${HERE}/usr/bin/arcanum" "$@"

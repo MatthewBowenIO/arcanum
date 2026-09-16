@@ -1,0 +1,22 @@
+[package]
+name = "arcanum"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.85"
+description = "A live hardware dashboard for Intel graphics — i915 and xe driver support"
+license = "MIT"
+repository = "https://github.com/yourname/arcanum"
+keywords = ["intel", "gpu", "monitor", "dashboard", "system"]
+categories = ["gui", "hardware-support"]
+
+[dependencies]
+eframe = "0.36"
+egui = "0.36"
+egui_plot = "0.37"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+
+[profile.release]
+lto = "thin"
+strip = "symbols"
+opt-level = 2

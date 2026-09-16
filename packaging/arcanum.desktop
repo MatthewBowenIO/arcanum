@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=Arcanum
+GenericName=System Monitor
+Comment=Retro terminal dashboard for Intel graphics (i915 / xe)
+Exec=arcanum
+Icon=arcanum
+Terminal=false
+Categories=System;Monitor;
+Keywords=system;monitor;gpu;cpu;intel;graphics;temperature;fan;
+StartupWMClass=arcanum
